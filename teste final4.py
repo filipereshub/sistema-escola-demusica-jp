@@ -11,7 +11,7 @@ try:
     conexao = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="PERES",
+        password="",
         database="escola_db"
     )
     cursor = conexao.cursor()
@@ -370,4 +370,5 @@ if conexao and conexao.is_connected():
     conexao.close()
     print("Conexão com o MySQL fechada (fallback).") 
     
+
 # --- Fim do Código ---
